@@ -215,7 +215,7 @@ async function persistMessage(boardId: string, message: UIMessage) {
     board_id: boardId,
     user_id: userId,
     role: message.role,
-    parts: message.parts as unknown as Record<string, unknown>[],
+    parts: message.parts as never,
   });
   if (error) console.error(error);
 }
