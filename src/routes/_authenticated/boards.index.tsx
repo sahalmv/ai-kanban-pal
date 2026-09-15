@@ -19,7 +19,7 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import { boardKeys, createBoard, deleteBoard, fetchBoards } from "@/lib/board-api";
 
-export const Route = createFileRoute("/_authenticated/boards")({
+export const Route = createFileRoute("/_authenticated/boards/")({
   head: () => ({
     meta: [
       { title: "Your boards — Scopeboard" },
